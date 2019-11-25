@@ -1,4 +1,4 @@
-package am3thyste.topquizz;
+package am3thyste.topquizz.controller;
 
 /**
  * Created by <Léa> on <java.util.Calendar.getInstance()>.
@@ -15,11 +15,15 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import am3thyste.topquizz.R;
+import am3thyste.topquizz.model.User;
+
 
 public class MainActivity extends AppCompatActivity{
         private TextView mGreetingText;
         private EditText mNameInput;
         private Button  mPlayButton;
+        private User mUser;
 
        @Override
 protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +33,8 @@ protected void onCreate(Bundle savedInstanceState) {
         mGreetingText = findViewById(R.id.main_activity_greeting_txt);
         mNameInput=findViewById(R.id.main_activity_name_input);
         mPlayButton=findViewById(R.id.main_activity_play_btn);
+
+        mUser = new User();
 
         mPlayButton.setEnabled(false);
         mNameInput.addTextChangedListener(new TextWatcher() {
@@ -51,6 +57,8 @@ protected void onCreate(Bundle savedInstanceState) {
         mPlayButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                        String firstname = mNameInput.getText().toString();
+                        mUser.setFirstname(firstname);
                         //user clicked LET'S PLAY button
                         Intent gameActivityIntent = new Intent(MainActivity.this, GameActivity.class);
                         startActivity(gameActivityIntent);

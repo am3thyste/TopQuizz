@@ -4,80 +4,83 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    tools:context=".GameActivity">
+    tools:context=".controller.GameActivity">
+
+
 
 <TextView
     android:id="@+id/game_activity_question_text"
     android:layout_width="match_parent"
-    android:layout_height="0dp"
+    android:layout_height="wrap_content"
     android:text="@string/game_activity_question"
     android:gravity="center"
-    android:padding="70dp"
+    android:padding="40dp"
     android:textColor="@color/Blue"
     android:textStyle="bold"
-    android:background="@drawable/back"
-    android:layout_weight="2"
     android:layout_marginTop="5dp"
     android:layout_marginBottom="5dp"
     android:layout_marginStart="15dp"
     android:layout_marginEnd="15dp"
+    android:textSize="20sp"
+
+
     >
 </TextView>
 
     <Button
         android:id="@+id/game_activity_activity1_btn"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:text="@string/game_activity_answer1"
-        android:padding="50dp"
+        android:padding="40dp"
         android:textColor="@color/Red"
         android:textStyle="bold"
-        android:background="@drawable/back"
         android:layout_margin="5dp"
-        android:layout_weight="1"
+        android:textSize="15sp"
+        android:gravity="center"
+
         >
     </Button>
 
     <Button
         android:id="@+id/game_activity_activity2_btn"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:text="@string/game_activity_answer2"
-        android:padding="50dp"
+        android:padding="40dp"
         android:textColor="@color/Red"
         android:textStyle="bold"
-        android:background="@drawable/back"
         android:layout_margin="5dp"
-        android:layout_weight="1"
+        android:textSize="15sp"
+
         >
     </Button>
 
     <Button
         android:id="@+id/game_activity_activity3_btn"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:text="@string/game_activity_answer3"
-        android:padding="50dp"
+        android:padding="40dp"
         android:textColor="@color/Red"
         android:textStyle="bold"
-        android:background="@drawable/back"
         android:layout_margin="5dp"
-        android:layout_weight="1"
+        android:textSize="15sp"
 
         >
     </Button>
 
     <Button
         android:id="@+id/game_activity_activity4_btn"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:text="@string/game_activity_answer4"
-        android:padding="50dp"
+        android:padding="40dp"
         android:textColor="@color/Red"
         android:textStyle="bold"
-        android:background="@drawable/back"
         android:layout_margin="5dp"
-        android:layout_weight="1"
+        android:textSize="15sp"
         >
+
     </Button>
 </LinearLayout>
