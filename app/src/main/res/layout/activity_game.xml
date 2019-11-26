@@ -14,7 +14,7 @@
     android:layout_height="wrap_content"
     android:text="@string/game_activity_question"
     android:gravity="center"
-    android:padding="40dp"
+    android:padding="30dp"
     android:textColor="@color/Blue"
     android:textStyle="bold"
     android:layout_marginTop="5dp"
